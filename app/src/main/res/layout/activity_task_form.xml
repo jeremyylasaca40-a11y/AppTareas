@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Header con gradiente -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:background="@drawable/header_gradient"
+            android:orientation="vertical"
+            android:paddingStart="24dp"
+            android:paddingEnd="24dp"
+            android:paddingTop="48dp"
+            android:paddingBottom="24dp"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="✏️"
+                android:textSize="28sp"/>
+
+            <TextView
+                android:id="@+id/tvFormTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Nueva Tarea"
+                android:textSize="26sp"
+                android:textStyle="bold"
+                android:textColor="#FFFFFF"
+                android:layout_marginTop="8dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Completa los detalles de la tarea"
+                android:textSize="13sp"
+                android:textColor="#E0E7FF"
+                android:layout_marginTop="4dp"/>
+
+        </LinearLayout>
+
+        <!-- Formulario en card -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginTop="-40dp"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="8dp"
+            app:cardBackgroundColor="@color/surface">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="24dp">
+
+                <!-- Título -->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Título"
+                    android:textSize="13sp"
+                    android:textColor="@color/text_secondary"
+                    android:textStyle="bold"
+                    android:letterSpacing="0.5"
+                    android:layout_marginBottom="6dp"/>
+
+                <EditText
+                    android:id="@+id/etTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="52dp"
+                    android:hint="Ej: Comprar víveres"
+                    android:background="@drawable/spinner_background"
+                    android:paddingStart="16dp"
+                    android:paddingEnd="16dp"
+                    android:textSize="15sp"
+                    android:textColor="@color/text_primary"
+                    android:inputType="text"
+                    android:layout_marginBottom="20dp"/>
+
+                <!-- Descripción -->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Descripción"
+                    android:textSize="13sp"
+                    android:textColor="@color/text_secondary"
+                    android:textStyle="bold"
+                    android:letterSpacing="0.5"
+                    android:layout_marginBottom="6dp"/>
+
+                <EditText
+                    android:id="@+id/etDescription"
+                    android:layout_width="match_parent"
+                    android:layout_height="110dp"
+                    android:hint="Detalles de la tarea"
+                    android:background="@drawable/spinner_background"
+                    android:padding="16dp"
+                    android:textSize="15sp"
+                    android:textColor="@color/text_primary"
+                    android:gravity="top"
+                    android:inputType="textMultiLine"
+                    android:minLines="3"
+                    android:layout_marginBottom="20dp"/>
+
+                <!-- Estado -->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Estado"
+                    android:textSize="13sp"
+                    android:textColor="@color/text_secondary"
+                    android:textStyle="bold"
+                    android:letterSpacing="0.5"
+                    android:layout_marginBottom="6dp"/>
+
+                <Spinner
+                    android:id="@+id/spinnerStatus"
+                    android:layout_width="match_parent"
+                    android:layout_height="52dp"
+                    android:background="@drawable/spinner_background"
+                    android:paddingStart="16dp"
+                    android:layout_marginBottom="20dp"/>
+
+                <!-- Prioridad (NUEVO) -->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Prioridad"
+                    android:textSize="13sp"
+                    android:textColor="@color/text_secondary"
+                    android:textStyle="bold"
+                    android:letterSpacing="0.5"
+                    android:layout_marginBottom="6dp"/>
+
+                <Spinner
+                    android:id="@+id/spinnerPriority"
+                    android:layout_width="match_parent"
+                    android:layout_height="52dp"
+                    android:background="@drawable/spinner_background"
+                    android:paddingStart="16dp"
+                    android:layout_marginBottom="20dp"/>
+
+                <!-- Fecha de vencimiento -->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Fecha de vencimiento"
+                    android:textSize="13sp"
+                    android:textColor="@color/text_secondary"
+                    android:textStyle="bold"
+                    android:letterSpacing="0.5"
+                    android:layout_marginBottom="6dp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="20dp">
+
+                    <EditText
+                        android:id="@+id/etDueDate"
+                        android:layout_width="0dp"
+                        android:layout_height="52dp"
+                        android:layout_weight="1"
+                        android:hint="YYYY-MM-DD"
+                        android:background="@drawable/spinner_background"
+                        android:paddingStart="16dp"
+                        android:paddingEnd="16dp"
+                        android:textSize="15sp"
+                        android:textColor="@color/text_primary"
+                        android:focusable="false"
+                        android:clickable="true"
+                        android:layout_marginEnd="12dp"/>
+
+                    <Button
+                        android:id="@+id/btnPickDate"
+                        android:layout_width="52dp"
+                        android:layout_height="52dp"
+                        android:text="📅"
+                        android:textSize="20sp"
+                        android:backgroundTint="@color/primary"
+                        android:textColor="#FFFFFF"
+                        app:cornerRadius="12dp"/>
+                </LinearLayout>
+
+                <!-- Usuario asignado -->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Usuario asignado"
+                    android:textSize="13sp"
+                    android:textColor="@color/text_secondary"
+                    android:textStyle="bold"
+                    android:letterSpacing="0.5"
+                    android:layout_marginBottom="6dp"/>
+
+                <EditText
+                    android:id="@+id/etAssignedUser"
+                    android:layout_width="match_parent"
+                    android:layout_height="52dp"
+                    android:hint="Nombre del responsable"
+                    android:background="@drawable/spinner_background"
+                    android:paddingStart="16dp"
+                    android:paddingEnd="16dp"
+                    android:textSize="15sp"
+                    android:textColor="@color/text_primary"
+                    android:inputType="textPersonName"
+                    android:layout_marginBottom="28dp"/>
+
+                <!-- Botones -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/btnCancel"
+                        android:layout_width="0dp"
+                        android:layout_height="52dp"
+                        android:layout_weight="1"
+                        android:text="Cancelar"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        android:backgroundTint="#E5E7EB"
+                        android:textColor="@color/text_primary"
+                        android:layout_marginEnd="10dp"
+                        app:cornerRadius="12dp"/>
+
+                    <Button
+                        android:id="@+id/btnSave"
+                        android:layout_width="0dp"
+                        android:layout_height="52dp"
+                        android:layout_weight="1"
+                        android:text="Guardar"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        android:backgroundTint="@color/primary"
+                        android:textColor="#FFFFFF"
+                        android:layout_marginStart="10dp"
+                        app:cornerRadius="12dp"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <!-- Espacio inferior -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="40dp"/>
+
+    </LinearLayout>
+
+</ScrollView>

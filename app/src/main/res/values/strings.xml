@@ -1,3 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">AppTareas</string>
+
+    <string-array name="status_array">
+        <item>Pendiente</item>
+        <item>En Progreso</item>
+        <item>Completada</item>
+    </string-array>
+
+    <string-array name="filter_array">
+        <item>Todas</item>
+        <item>Pendiente</item>
+        <item>En Progreso</item>
+        <item>Completada</item>
+    </string-array>
+
+    <!-- Array de prioridades -->
+    <string-array name="priority_array">
+        <item>Alta</item>
+        <item>Media</item>
+        <item>Baja</item>
+    </string-array>
 </resources>
