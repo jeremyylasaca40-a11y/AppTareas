@@ -1,5 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="black">#FF000000</color>
-    <color name="white">#FFFFFFFF</color>
+    <color name="primary">#6C63FF</color>
+    <color name="primary_dark">#5A52D5</color>
+    <color name="primary_light">#8B85FF</color>
+    <color name="accent">#FF6584</color>
+    <color name="background">#F0F2F5</color>
+    <color name="surface">#FFFFFF</color>
+    <color name="text_primary">#1A1A2E</color>
+    <color name="text_secondary">#6B7280</color>
+    <color name="text_hint">#9CA3AF</color>
+    <color name="divider">#E5E7EB</color>
+
+    <color name="status_pendiente">#EF4444</color>
+    <color name="status_pendiente_bg">#FEE2E2</color>
+    <color name="status_progreso">#F59E0B</color>
+    <color name="status_progreso_bg">#FEF3C7</color>
+    <color name="status_completada">#10B981</color>
+    <color name="status_completada_bg">#D1FAE5</color>
+
+    <!-- Colores de prioridad -->
+    <color name="priority_alta">#EF4444</color>
+    <color name="priority_media">#F59E0B</color>
+    <color name="priority_baja">#10B981</color>
+
+    <color name="card_shadow">#1A000000</color>
+    <color name="fab_color">#6C63FF</color>
 </resources>

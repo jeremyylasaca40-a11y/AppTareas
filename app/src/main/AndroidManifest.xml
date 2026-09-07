@@ -21,6 +21,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".TaskFormActivity"
+            android:label="Formulario de Tarea"/>
+        <activity android:name=".StatisticsActivity"
+            android:label="Estadísticas"/>
     </application>
 
 </manifest>
