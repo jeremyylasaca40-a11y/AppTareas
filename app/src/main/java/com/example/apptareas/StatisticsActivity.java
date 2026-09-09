@@ -104,4 +104,8 @@ public class StatisticsActivity extends AppCompatActivity {
             progressBar.setBackgroundColor(ContextCompat.getColor(this, R.color.status_pendiente));
         }
     }
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 54dda129a692ff8da6dc6b350412a4b1650ed84e
